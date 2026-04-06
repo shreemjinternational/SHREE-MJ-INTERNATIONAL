@@ -1,104 +1,229 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>SHREE MJ INTERNATIONAL</title>
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 <style>
+
 body {
-font-family: Arial;
-margin:0;
-background-color:#f5f5f5;
+font-family: Arial, sans-serif;
 }
 
-.header {
-background-color:#003366;
-color:white;
-padding:20px;
-text-align:center;
+.navbar {
+background-color: #0d3b66;
+}
+
+.navbar-brand,
+.nav-link {
+color: white !important;
+font-weight: bold;
+}
+
+.hero {
+background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+url('https://images.unsplash.com/photo-1606787366850-de6330128bfc');
+background-size: cover;
+background-position: center;
+color: white;
+padding: 120px 20px;
+text-align: center;
 }
 
 .section {
-padding:30px;
-margin:20px;
-background:white;
-border-radius:8px;
+padding: 60px 20px;
 }
 
 .footer {
-background-color:#003366;
-color:white;
-text-align:center;
-padding:15px;
+background-color: #0d3b66;
+color: white;
+padding: 30px;
+text-align: center;
 }
+
 </style>
 
 </head>
 
 <body>
 
-<div class="header">
-<h1>SHREE MJ INTERNATIONAL</h1>
-<p>General Trading | DGFT | Customs | Import & Export Services</p>
-</div>
+<!-- NAVBAR -->
 
-<div class="section">
+<nav class="navbar navbar-expand-lg">
 
-<h2>Welcome</h2>
+<div class="container">
 
-<p>
-SHREE MJ INTERNATIONAL is a Chennai-based company providing reliable 
-General Trading, DGFT Documentation, Customs Documentation, and 
-Import & Export Services across India and international markets.
-</p>
+<a class="navbar-brand" href="#">
+SHREE MJ INTERNATIONAL
+</a>
 
-</div>
+<button class="navbar-toggler bg-white" type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
 
-<div class="section">
+<span class="navbar-toggler-icon"></span>
 
-<h2>About Us</h2>
+</button>
 
-<p>
-We provide professional services in DGFT and Customs documentation,
-helping businesses handle import and export processes smoothly and efficiently.
-</p>
+<div class="collapse navbar-collapse"
+id="navbarNav">
 
-</div>
+<ul class="navbar-nav ms-auto">
 
-<div class="section">
+<li class="nav-item">
+<a class="nav-link" href="#">Home</a>
+</li>
 
-<h2>Our Services</h2>
+<li class="nav-item">
+<a class="nav-link" href="#">About</a>
+</li>
 
-<ul>
-<li>General Trading</li>
-<li>DGFT Documentation Services</li>
-<li>Customs Documentation</li>
-<li>Import Services</li>
-<li>Export Services</li>
-<li>Trade Compliance Support</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Services</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Contact</a>
+</li>
+
 </ul>
 
 </div>
 
-<div class="section">
+</div>
 
-<h2>Contact Us</h2>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+<h1>Your Trusted Partner in Trading & Export</h1>
 
 <p>
-<b>Address:</b><br>
-No. 35/11B, Muniyappan Street,<br>
-Perambur, Chennai,<br>
-Tamil Nadu, India<br><br>
-
-<b>Phone:</b> 9092099532<br>
-<b>WhatsApp:</b> 9092099532<br>
-<b>Email:</b> mohanraj8329@gmail.com
+Trading | Import & Export | DGFT Documentation
 </p>
 
 </div>
 
-<div class="footer">
-<p>© 2026 SHREE MJ INTERNATIONAL | All Rights Reserved</p>
+</section>
+
+<!-- ABOUT -->
+
+<section class="section">
+
+<div class="container text-center">
+
+<h2>About SHREE MJ INTERNATIONAL</h2>
+
+<p>
+
+Established on 23rd March 2026, SHREE MJ INTERNATIONAL
+is based in Chennai and specializes in trading,
+import-export of agricultural commodities and
+DGFT & Customs documentation services.
+
+</p>
+
 </div>
 
+</section>
+
+<!-- SERVICES -->
+
+<section class="section bg-light">
+
+<div class="container">
+
+<h2 class="text-center">Our Services</h2>
+
+<div class="row mt-4">
+
+<div class="col-md-4 text-center">
+
+<h4>Trading</h4>
+
+<p>
+All kinds of agricultural commodities trading.
+</p>
+
+</div>
+
+<div class="col-md-4 text-center">
+
+<h4>Import & Export</h4>
+
+<p>
+Reliable international trading solutions.
+</p>
+
+</div>
+
+<div class="col-md-4 text-center">
+
+<h4>DGFT Documentation</h4>
+
+<p>
+Professional customs documentation services.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="section">
+
+<div class="container text-center">
+
+<h2>Contact Us</h2>
+
+<p>
+
+NO.35/11B, MUNIYAPPAN STREET,<br>
+PERAMBUR, CHENNAI - 600011
+
+</p>
+
+<p>
+
+Phone: +91 9092099532<br>
+Email: admin@shreemjinternational.com
+
+</p>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<p>
+
+© 2026 SHREE MJ INTERNATIONAL  
+All Rights Reserved
+
+</p>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
