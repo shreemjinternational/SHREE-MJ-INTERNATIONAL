@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -8,21 +7,44 @@
 
 <title>SHREE MJ INTERNATIONAL</title>
 
-<!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #0d3b66;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    margin-left: 15px;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1567306226416-28f0efdc88ce');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 140px 20px;
+    text-align: center;
+}
 
 .product-card {
     background: white;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    transition: 0.3s;
 }
 
 .product-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-8px);
 }
 
 .product-card img {
@@ -32,367 +54,172 @@
     border-radius: 8px;
 }
 
-<style>
-
-.hero {
-background: linear-gradient(rgba(0,0,0,0.5),
-rgba(0,0,0,0.5)),
-url('https://images.unsplash.com/photo-1567306226416-28f0efdc88ce');
-background-size: cover;
-background-position: center;
-color: white;
-padding: 140px 20px;
-text-align: center;
-}
-
 .section {
-padding: 60px 20px;
+    padding: 60px 20px;
 }
 
 footer {
-background-color: #0d3b66;
-color: white;
-padding: 30px;
-text-align: center;
+    background-color: #0d3b66;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 </style>
 
+</head>
+
+<body>
+
 <!-- NAVBAR -->
-
 <nav class="navbar navbar-expand-lg">
-
 <div class="container">
 
-<a class="navbar-brand d-flex align-items-center" href="#">
-
-<img src="logo.png" style="height:90px; width:auto; margin-right:15px;">
-
-<span style="color:white; font-weight:bold; font-size:35px;">
+<a class="navbar-brand text-white fw-bold" href="#">
 SHREE MJ INTERNATIONAL
-</span>
-
 </a>
 
-<button class="navbar-toggler bg-white" type="button"
-data-bs-toggle="collapse"
-data-bs-target="#navbarNav">
-
+<button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
 <span class="navbar-toggler-icon"></span>
-
 </button>
 
-<div class="collapse navbar-collapse"
-id="navbarNav">
-
+<div class="collapse navbar-collapse" id="nav">
 <ul class="navbar-nav ms-auto">
-
-<li class="nav-item">
-<a class="nav-link" <a href="#">Home</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" <a href="#about">About</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" <a href="#services">Services</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" <a href="#contact">Contact</a>
-</li>
-
+<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 </ul>
-
 </div>
 
 </div>
-
 </nav>
 
 <!-- HERO -->
-
 <section class="hero">
-
 <div class="container">
-
 <h1>Your Trusted Partner in Trading & Export</h1>
-
-<p>
-Trading | Import & Export | DGFT Documentation
-</p>
-
+<p>Rice | Spices | Pulses | Fruits & Vegetables</p>
+<a href="#contact" class="btn btn-warning mt-3">Enquire Now</a>
 </div>
-
-<!-- Our Products Section -->
-
-<div class="container text-center">
-
-
-
 </section>
 
+<!-- PRODUCTS -->
+<section id="products" class="section bg-light">
 <div class="container text-center">
 
-<section id="products" style="padding: 60px 20px; background-color: #f8f9fa;">
+<h2 class="mb-5">Our Products</h2>
 
-<div class="container text-center">
-
-<h2 style="margin-bottom:40px;">Our Products</h2>
+<div class="row g-4">
 
 <div class="col-md-3">
 <div class="product-card">
-
-<h4>Rice</h4>
-
-<img src="images/rice.jpg" alt="Rice">
-
-<p>Premium quality Basmati and Non-Basmati rice for global export.</p>
-
+<img src="images/rice.jpg">
+<h5 class="mt-3">Rice</h5>
+<p>Premium Basmati & Non-Basmati rice for export.</p>
 </div>
-</div>
-    
-<div class="col-md-3">
-<h4>Spices</h4>
-<img src="images/spices.jpg" alt="Spices" class="img-fluid" style="height:200px; object-fit:cover;">
-<p>Fresh and aromatic spices sourced directly from trusted farmers.</p>
 </div>
 
 <div class="col-md-3">
-<h4>Pulses</h4>
-<img src="images/pulses.jpg" alt="Pulses" class="img-fluid" style="height:200px; object-fit:cover;">
-<p>High-quality pulses processed and packed for international markets.</p>
+<div class="product-card">
+<img src="images/spices.jpg">
+<h5 class="mt-3">Spices</h5>
+<p>Fresh & aromatic spices sourced from farmers.</p>
+</div>
 </div>
 
 <div class="col-md-3">
-<h4>Fruits & Vegetables</h4>
-<img src="images/fruits.jpg" alt="Fruits" class="img-fluid" style="height:200px; object-fit:cover;">
-<p>Fresh fruits and vegetables exported with proper packaging.</p>
+<div class="product-card">
+<img src="images/pulses.jpg">
+<h5 class="mt-3">Pulses</h5>
+<p>High-quality pulses for international markets.</p>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="product-card">
+<img src="images/fruits.jpg">
+<h5 class="mt-3">Fruits & Vegetables</h5>
+<p>Fresh produce with export-grade packaging.</p>
+</div>
 </div>
 
 </div>
 
 </div>
-
-</section>
-</section>
-<section id="products" style="padding: 60px 20px; background-color: #f8f9fa;">
-
-<h2 style="font-size: 32px; color: #0d3b66; margin-bottom: 40px;">
-Why Choose Us
-</h2>
-
-<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-
-<div style="width: 220px; margin: 15px;">
-<h3 style="color: #0d3b66;">Quality Assurance</h3>
-<p>We ensure premium quality products that meet international export standards.</p>
-</div>
-
-<div style="width: 220px; margin: 15px;">
-<h3 style="color: #0d3b66;">Trusted Suppliers</h3>
-<p>We source directly from reliable farmers and trusted vendors.</p>
-</div>
-
-<div style="width: 220px; margin: 15px;">
-<h3 style="color: #0d3b66;">Timely Delivery</h3>
-<p>We guarantee safe packaging and on-time shipment worldwide.</p>
-</div>
-
-<div style="width: 220px; margin: 15px;">
-<h3 style="color: #0d3b66;">Export Expertise</h3>
-<p>We handle DGFT and customs documentation smoothly.</p>
-</div>
-
-<!-- Our Services Section -->
-
-<section id="about" style="padding: 60px 20px; background-color: white;">
-
-<h2 style="font-size: 32px; color: #0d3b66; margin-bottom: 40px;">
-Our Services
-</h2>
-
-<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-
-<div style="width: 250px; margin: 15px;">
-<h3 style="color: #0d3b66;">Import & Export</h3>
-<p>We provide reliable import and export services for agricultural commodities worldwide.</p>
-</div>
-
-<div style="width: 250px; margin: 15px;">
-<h3 style="color: #0d3b66;">DGFT Documentation</h3>
-<p>Complete assistance with DGFT registration, licenses, and export documentation.</p>
-</div>
-
-<div style="width: 250px; margin: 15px;">
-<h3 style="color: #0d3b66;">Customs Clearance</h3>
-<p>Efficient customs clearance support to ensure smooth shipment processing.</p>
-</div>
-
-<div style="width: 250px; margin: 15px;">
-<h3 style="color: #0d3b66;">Product Sourcing</h3>
-<p>We help source high-quality products directly from trusted farmers and suppliers.</p>
-</div>
-
-</div>
-
 </section>
 
-</section>
+<!-- WHY CHOOSE US -->
+<section class="section">
+<div class="container text-center">
+
+<h2 class="mb-5">Why Choose Us</h2>
+
+<div class="row">
+
+<div class="col-md-3">
+<h5>Quality Assurance</h5>
+<p>International standard products.</p>
+</div>
+
+<div class="col-md-3">
+<h5>Trusted Suppliers</h5>
+<p>Direct sourcing from farmers.</p>
+</div>
+
+<div class="col-md-3">
+<h5>Timely Delivery</h5>
+<p>Safe & fast shipments worldwide.</p>
+</div>
+
+<div class="col-md-3">
+<h5>Export Expertise</h5>
+<p>DGFT & customs handled smoothly.</p>
+</div>
 
 </div>
 
+</div>
 </section>
 
 <!-- ABOUT -->
-
-<section class="section">
-
+<section id="about" class="section bg-light">
 <div class="container text-center">
 
-<h2>About SHREE MJ INTERNATIONAL</h2>
-
+<h2>About Us</h2>
 <p>
-
-Established on 23rd March 2026, SHREE MJ INTERNATIONAL
-is based in Chennai and specializes in trading,
-import-export of agricultural commodities and
-DGFT & Customs documentation services.
-
+SHREE MJ INTERNATIONAL, based in Chennai, specializes in
+agricultural exports and DGFT documentation services.
 </p>
 
 </div>
-
 </section>
 
-<!-- SERVICES -->
+<!-- CONTACT -->
+<section id="contact" class="section">
+<div class="container text-center">
 
-<section class="section bg-light">
+<h2>Contact Us</h2>
 
-<div class="container">
-
-<h2 class="text-center">Our Services</h2>
-
-<div class="row mt-4">
-
-<div class="col-md-4 text-center">
-
-<h4>Trading</h4>
-
-<p>
-All kinds of agricultural commodities trading.
-</p>
+<p>📞 +91 9092099532</p>
+<p>📧 admin@shreemjinternational.com</p>
+<p>📍 Chennai, Tamil Nadu, India</p>
 
 </div>
-
-<div class="col-md-4 text-center">
-
-<h4>Import & Export</h4>
-
-<p>
-Reliable international trading solutions.
-</p>
-
-</div>
-
-<div class="col-md-4 text-center">
-
-<h4>DGFT Documentation</h4>
-
-<p>
-Professional customs documentation services.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
 </section>
 
-<!-- Contact Us Section -->
+<!-- FOOTER -->
+<footer>
+© 2026 SHREE MJ INTERNATIONAL | All Rights Reserved
+</footer>
 
-<section id="contact" style="padding: 60px 20px; background-color: white;">
-
-<h2 style="font-size: 32px; color: #0d3b66; margin-bottom: 40px;">
-Contact Us
-</h2>
-
-<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-
-<div style="width: 300px; margin: 15px;">
-<h3 style="color: #0d3b66;">📞 Phone</h3>
-<p>+91 9092099532</p>
-</div>
-
-<div style="width: 300px; margin: 15px;">
-<h3 style="color: #0d3b66;">📧 Email</h3>
-<p>admin@shreemjinternational.com</p>
-</div>
-
-<div style="width: 300px; margin: 15px;">
-<h3 style="color: #0d3b66;">📍 Address</h3>
-<p>
-No.35/11B, Muniyappan Street,<br>
-Ragavan Salai, Perambur,<br>
-Chennai - 600011, Tamil Nadu, India
-</p>
-</div>
-
-</div>
-
-</section>
-<!-- WhatsApp Floating Button -->
-
-<a href="https://wa.me/919092099532" 
-   target="_blank"
-   style="
-   position: fixed;
-   bottom: 20px;
-   right: 20px;
-   background-color: #25D366;
-   color: white;
-   font-size: 18px;
-   padding: 12px 18px;
-   border-radius: 30px;
-   text-decoration: none;
-   font-weight: bold;
-   box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-   ">
-📱 WhatsApp Us
+<!-- WHATSAPP -->
+<a href="https://wa.me/919092099532" target="_blank"
+style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:12px 18px; border-radius:30px; text-decoration:none;">
+WhatsApp
 </a>
-
-<!-- Google Map Section -->
-
-<section style="padding: 40px; text-align: center; background-color: #f8f9fa;">
-
-<h2 style="font-size: 30px; color: #0d3b66; margin-bottom: 20px;">
-Our Location
-</h2>
-
-<iframe 
-src="https://www.google.com/maps?q=13.1141336,80.2409957&hl=es;z=16&output=embed"
-width="100%" 
-height="350" 
-style="border:0;" 
-allowfullscreen="" 
-loading="lazy">
-</iframe>
-
-</section>
-
-   
-© 2026 SHREE MJ INTERNATIONAL  
-All Rights Reserved
-
-</p>
-
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>
